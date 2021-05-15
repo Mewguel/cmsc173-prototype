@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Grommet } from 'grommet';
+
+const theme = {
+    global: {
+        font: {
+            family: 'Arial',
+            size: '100px',
+            height: '100px',
+        },
+    },
+};
 
 function App() {
   return (
-    <div className="App">
+    <Grommet theme={theme}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Hello World
       </header>
-    </div>
+    </Grommet>
   );
 }
 
