@@ -2,7 +2,8 @@ import { Button } from "grommet";
 
 export const NavButton = (props) => (
     <Button
-        onClick={() => {}}
+        margin={{ horizontal:'medium' }}
+        onMouseOver={() => {}}
         {...props}
     />
   );

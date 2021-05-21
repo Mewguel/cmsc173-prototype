@@ -12,9 +12,9 @@ function App() {
         <AppBar>
           <Heading level='3' margin='none'>PANTRY POINT</Heading>
           <NavButtonBox>
-            <NavButton onClick={() => {}}>MAP</NavButton>
-            <NavButton onClick={() => {}}>REGISTER</NavButton>
-            <NavButton onClick={() => {}}>ABOUT</NavButton>
+            <NavButton>MAP</NavButton>
+            <NavButton>REGISTER</NavButton>
+            <NavButton>ABOUT</NavButton>
           </NavButtonBox>
         </AppBar>
         <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
