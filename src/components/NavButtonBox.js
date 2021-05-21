@@ -4,7 +4,7 @@ export const NavButtonBox = (props) => (
     <Box
         direction='row'
         justify='between'
-        margin='small'
+        margin='xsmall'
         {...props}
     />
   );

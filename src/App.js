@@ -10,7 +10,9 @@ function App() {
     <Grommet theme={theme} full>
       <Box fill>
         <AppBar>
-          <Heading level='3' margin='none'>PANTRY POINT</Heading>
+          <NavButtonBox>
+            <Heading level='2' margin='none'>PANTRY POINT</Heading>
+          </NavButtonBox>
           <NavButtonBox>
             <NavButton>MAP</NavButton>
             <NavButton>REGISTER</NavButton>
