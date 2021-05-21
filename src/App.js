@@ -1,19 +1,7 @@
 import React from 'react';
+import { theme } from './theme';
 import { Box, Button, Heading, Grommet } from 'grommet';
 import { Notification } from 'grommet-icons';
-
-const theme = {
-  global: {
-    colors: {
-      brand: '#228BE6',
-    },
-    font: {
-      family: 'Roboto',
-      size: '30px',
-      height: '30px',
-    },
-  },
-};
 
 const AppBar = (props) => (
   <Box
