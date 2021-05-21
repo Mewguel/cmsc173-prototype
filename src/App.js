@@ -15,9 +15,9 @@ function App() {
             <Heading level='2' margin='none' className='squada-one'>PANTRY POINT</Heading>
           </NavButtonBox>
           <NavButtonBox>
-            <NavButton>MAP</NavButton>
-            <NavButton>REGISTER</NavButton>
-            <NavButton>ABOUT</NavButton>
+            <NavButton href=''>MAP</NavButton>
+            <NavButton href=''>REGISTER</NavButton>
+            <NavButton href=''>ABOUT</NavButton>
           </NavButtonBox>
         </AppBar>
         <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
