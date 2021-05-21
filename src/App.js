@@ -4,6 +4,7 @@ import { Box, Heading, Grommet } from 'grommet';
 import { AppBar } from './components/AppBar';
 import { NavButtonBox } from './components/NavButtonBox';
 import { NavButton } from './components/NavButton';
+import './styles.css';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Box fill>
         <AppBar>
           <NavButtonBox>
-            <Heading level='2' margin='none'>PANTRY POINT</Heading>
+            <Heading level='2' margin='none' className='squada-one'>PANTRY POINT</Heading>
           </NavButtonBox>
           <NavButtonBox>
             <NavButton>MAP</NavButton>
