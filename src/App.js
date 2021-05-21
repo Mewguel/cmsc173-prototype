@@ -22,8 +22,12 @@ function App() {
     <Grommet theme={theme} full>
       <Box fill>
         <AppBar>
-          <Heading level='3' margin='none'>My App</Heading>
-          <Button icon={<Notification />} onClick={() => {}}></Button>
+          <Heading level='3' margin='none'>PANTRY POINT</Heading>
+          <Box direction='row' justify='between' margin='justify'>
+            <Button onClick={() => {}}>MAP</Button>
+            <Button onClick={() => {}}>REGISTER</Button>
+            <Button onClick={() => {}}>ABOUT</Button>
+          </Box>
         </AppBar>
         <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
           <Box flex align='center' justify='center'>
