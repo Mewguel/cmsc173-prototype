@@ -55,3 +55,28 @@
   transition: 150ms;
   /* border: solid 1px black; */
 }
+
+.emphasizedNav {
+  text-align: center;
+  width: 70%;
+  background-color: white;
+  border-radius: 3em;
+  font-weight: bold;
+}
+
+.emphasizedNav {
+  border: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+  color: #ff6701;
+}
+
+.emphasizedNav:hover {
+  text-align: center;
+  width: 70%;
+  background-color: #ff6701;
+  border: 3px solid white;
+  border-radius: 3em;
+  color: white;
+}

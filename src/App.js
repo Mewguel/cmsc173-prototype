@@ -14,9 +14,9 @@ import {
 function App() {
   return (
     <Container fluid className="containerStyle">
-      Hello World
+      Hello World from app
     </Container>
   );
-};
+}
 
 export default App;
