@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import App from './App';
-import About from './components/about';
-import Map from './components/map';
-import NavigationBar from './components/navbar';
-import Register from './components/register';
+import About from './components/About';
+import Map from './components/Map';
+import Navigation from './components/Navigation';
+import Register from './components/Register';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <NavigationBar/>
+      <Navigation />
       <Switch>
         <Route exact path="/" component={App}/>
         <Route path="/map" component={Map}/>
