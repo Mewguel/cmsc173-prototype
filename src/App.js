@@ -1,15 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-import {
-  Button,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
-  Container,
-} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
