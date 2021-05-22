@@ -7,3 +7,55 @@
 .roboto {
     font-family: "Roboto";
 }
+
+* {
+    font-size: 26px;
+}
+
+.registration {
+    background-image: url(assets/register-bgimage.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.reg-form {
+    background-color: #FFC288;
+    padding: 100px;
+}
+
+.regform-content {
+    border: 5px solid white;
+    border-radius: 50px;
+    margin: 0px 50px;
+    padding: 0px 80px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
+    background-color: #FF6701 !important;
+    border-color: white !important;
+    color: white !important
+}
+
+.btn-outline-primary {
+    color: #FF6701 !important;
+    /* background-color: #7cc !important; */
+    border-color: #FF6701 !important;
+    border-radius: 20px !important;
+}
+
+.btn {
+    margin: 50px;
+    /* margin-right: 50px; */
+}
+
+.header {
+    margin-bottom: 100px;
+}
+/* border-collapse: separate;  */
