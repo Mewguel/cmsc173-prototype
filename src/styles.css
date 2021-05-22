@@ -7,3 +7,12 @@
 .roboto {
     font-family: "Roboto";
 }
+
+#nav {
+    background-color: #ff6701;
+    color: #ffffff;
+}
+
+#nav-buttons {
+    color: #dadada;
+}
