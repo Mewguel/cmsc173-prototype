@@ -1,11 +1,19 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css";
+import {
+  Button,
+  Form,
+  FormControl,
+  Nav,
+  Navbar,
+  NavDropdown,
+  Container,
+} from "react-bootstrap";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div>Hello World from App</div>
-  );
-}
-
-export default App;
+    <Container fluid className="containerStyle">
+      Hello World
+    </Container>

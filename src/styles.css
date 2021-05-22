@@ -1,13 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap");
 
-.squada-one {
-    font-family: "Squada One";
+.navbarStyle {
+  background-color: #ff6701;
 }
 
-.roboto {
-    font-family: "Roboto";
+.containerStyle {
+  padding: 0;
 }
 
-#nav {
-    background-color: #ff6701;
+.navigationStyle {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.navbarCollapseStyle {
+  /* background-color: red; */
+  justify-content: flex-end;
+}
+
+.brandStyle {
+  color: white;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+  font-size: 1.65em;
+  font-weight: bold;
+  font-family: "Squada One";
+}
+.brandStyle span {
+  color: white;
+  letter-spacing: 7px;
+}
+
+.navElementStyle {
+  text-align: center;
+  width: 100%;
+  /* border: solid 1px black; */
+}
+
+.navElementStyle span {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: white;
+}
+
+.navElementStyle:hover {
+  text-align: center;
+  width: 100%;
+  border-top: solid white 3px;
+  padding-bottom: 0px;
+  transition: 150ms;
+  /* border: solid 1px black; */
 }
