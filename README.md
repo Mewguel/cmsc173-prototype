@@ -10,16 +10,18 @@
 
 # Development
 
-1. Write your commit messages properly by including the feature that you added/fixed.
+1. If you want to pull from a remote branch, enter `git checkout --track origin/<branch_name>`, assuming that you have already cloned the master branch.
+
+2. Write your commit messages properly by including the feature that you added/fixed.
 
 - Example: `added the navigation bar in home page`, `fixed a bug in the map page`
 
-2. Create a branch each time you add a new feature/fixed a bug and name them correspondingly.
+3. Create a branch each time you add a new feature/fixed a bug and name them correspondingly.
 
 - Example: `home-page-navigation-bar`
 
-3. Push the changes in the remote branch.
+4. Push the changes in the remote branch.
 
-4. Create a new pull request from the working branch to its base branch. Inform the other members as soon as possible once the pull request has been created.
+5. Create a new pull request from the working branch to its base branch. Inform the other members as soon as possible once the pull request has been created.
 
-5. All members can merge the pull request but must inform other members first.
+6. All members can merge the pull request but must inform other members first.
