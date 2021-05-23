@@ -167,8 +167,7 @@ h2 {
 }
 
 .emphasizedNav {
-  /* border: none; */
-  border: 0;
+  border: none;
   padding: 0.5em !important;
   text-align: center;
   width: 70%;
@@ -195,9 +194,9 @@ h2 {
 .emphasizedNav:hover {
   text-align: center;
   width: 70%;
-  background-color: #ff6701;
-  border: 3px solid white;
+  background-color: #ff6701 !important;
+  border: 3px solid white !important;
   padding: 0.35em !important;
   /* border-radius: 3em; */
-  color: white;
+  color: white !important;
 }
