@@ -1,16 +1,13 @@
-import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom'
-import RegisterPantry from './components/registration/RegForm';
-import './styles.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <Switch>
-        <Route path="/register-pantry" component={RegisterPantry}></Route>
-
-      </Switch>
-    </div>
+    <Container fluid className="containerStyle">
+      Hello World from app
+    </Container>
   );
 }
 

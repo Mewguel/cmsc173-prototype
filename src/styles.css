@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap");
 
-.squada-one {
-    font-family: "Squada One";
-}
-
-.roboto {
-    font-family: "Roboto";
+.navbarStyle {
+  background-color: #ff6701;
 }
 
 * {
@@ -109,3 +105,79 @@ h2 {
     padding: 10px; 
  } */
  
+.containerStyle {
+  padding: 0;
+}
+
+.navigationStyle {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.navbarCollapseStyle {
+  /* background-color: red; */
+  justify-content: flex-end;
+}
+
+.brandStyle {
+  color: white;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+  font-size: 1.65em;
+  font-weight: bold;
+  font-family: "Squada One";
+}
+.brandStyle span {
+  color: white;
+  letter-spacing: 7px;
+}
+
+.navElementStyle {
+  text-align: center;
+  width: 70%;
+  /* border: solid 1px black; */
+}
+
+.navElementStyle span {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: white;
+}
+
+.navElementStyle:hover {
+  text-align: center;
+  /* width: 100%; */
+  border-top: solid white 3px;
+  padding-bottom: 0px;
+  transition: 150ms;
+  /* border: solid 1px black; */
+}
+
+.emphasizedNav {
+  text-align: center;
+  width: 70%;
+  background-color: white;
+  border-radius: 3em;
+  font-weight: bold;
+}
+
+.emphasizedNav {
+  border: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+  color: #ff6701;
+}
+
+.emphasizedNav:hover {
+  text-align: center;
+  width: 70%;
+  background-color: #ff6701;
+  border: 3px solid white;
+  border-radius: 3em;
+  color: white;
+}
