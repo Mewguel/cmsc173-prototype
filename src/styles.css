@@ -4,17 +4,11 @@
   background-color: #ff6701;
 }
 
-* {
-    font-size: 20px;
-}
-
 .registration {
     background-image: url(assets/register-bgimage.jpg);
-    height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: absolute;  */
 }
 
 body, html {
@@ -30,8 +24,8 @@ body, html {
 .regform-content {
     border: 5px solid white;
     border-radius: 50px;
-    margin: 0px 50px;
-    padding: 0px 80px;
+    margin: 0px 20px;
+    padding: 0px 50px;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
@@ -77,18 +71,16 @@ body, html {
     /* min-height: 20px; */
  }
 
-h2 {
+.register-heading {
     position: absolute; 
     top: 100px; 
     left: 270px;
     font: bold 10px !important; 
     background-color:black;
-    /* background-size: 10px !important; */
     background: #FFC288;
     padding-right: 15px;
     padding-left: 20px;
-    /* width: 100%;  */
- }
+}
 
  /* .icon {
     position: absolute; 
@@ -180,4 +172,12 @@ h2 {
   border: 3px solid white;
   border-radius: 3em;
   color: white;
+}
+
+.label-size-restrict {
+  min-width: 180px;
+}
+
+.additional-text {
+  text-align: center;
 }
