@@ -7,6 +7,8 @@ import { API_key } from './default.json';
 function App() {
   return (
     <Container fluid className="containerStyle" >
+      
+      {/*div for the google map Component*/}
       <div style = {{width: "50vw", height: "50vh"}}>
       <WrappedMap 
         isMarkerShown={true}

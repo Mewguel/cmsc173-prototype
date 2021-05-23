@@ -1,6 +1,7 @@
 import {GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 function Map(props) {
     return(
+        //set google map coordinates and zoom level
         <GoogleMap
             defaultZoom={18}
             defaultCenter={{ lat: 14.164529, lng: 121.241929 }}
