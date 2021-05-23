@@ -1,6 +1,6 @@
 import React from 'react';
-import { Col, Row, Form } from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap';
+import { Col, Form, Image, Container } from 'react-bootstrap';
+import registerIcon from '../assets/register-icon.png';
 
 const handleClick = () => {
     alert('hello')
@@ -8,13 +8,11 @@ const handleClick = () => {
 
 const Register = () => {
     return (
-        <div className="registration d-flex justify-content-center align-items-center">
+        <Container fluid="lg" className="registration justify-content-center align-items-center">
           <div className="reg-form col-md-8 ">
                 <div className="header">
-                {/* <img src={require('/images/image-name.png')} /> */}
-                     <img src={require("../assets/register-icon.png").default} className="icon img-fluid" alt="icon" />
+                    <Image src={registerIcon} className="icon img-fluid" alt="icon" />
                     <h2>Register Your Pantry</h2>
-                    {/* <hr class="my-4"></hr> */}
                 </div>
             <div className="regform-content pt-5">
               <Form.Group>
@@ -87,7 +85,7 @@ const Register = () => {
                 onclick={handleClick}
                 >REGISTER</button>
           </div>
-        </div>
+        </Container>
     );
 }
 
