@@ -179,5 +179,21 @@ body, html {
 }
 
 .additional-text {
-  text-align: center;
+  padding: 0 8px;
+  text-align: justify;
+}
+
+.button-form-row {
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.next-page-button {
+  margin: 0;
+  background-color: #FFC288;
+  color: #ff6701;
+  border: none;
+  font-weight: bold;
+  padding: 0 10px;
 }
