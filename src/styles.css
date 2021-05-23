@@ -80,3 +80,55 @@
   border-radius: 3em;
   color: white;
 }
+
+.aboutSectionTall {
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  background-color: blue;
+  border: solid black 1px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutSectionSmall {
+  display: flex;
+  flex-direction: column;
+  height: 14em;
+  background-color: blue;
+  border: solid black 1px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.colNoPad {
+  padding: 0;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.aboutHead {
+  font-size: 4.4em;
+  font-family: "Squada One";
+}
+
+.aboutSub {
+  font-size: 1.6em;
+  font-family: "Roboto";
+}
+
+.fullImageInParent {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutSemiHead {
+  font-size: 1.9em;
+  font-family: "Roboto";
+}
+
+.aboutFooter {
+  background-color: teal;
+}
