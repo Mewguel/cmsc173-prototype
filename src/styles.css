@@ -5,98 +5,101 @@
 }
 
 * {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .registration {
-    background-image: url(assets/register-bgimage.jpg);
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* position: absolute;  */
+  background-image: url(assets/register-bgimage.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute;  */
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
 .reg-form {
-    background-color: #FFC288;
-    padding: 30px;
+  background-color: #ffc288;
+  padding: 30px;
 }
 
 .regform-content {
-    border: 5px solid white;
-    border-radius: 50px;
-    margin: 0px 50px;
-    padding: 0px 80px;
+  border: 5px solid white;
+  border-radius: 50px;
+  margin: 0px 50px;
+  padding: 0px 80px;
 }
 
-.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
-    background-color: #FF6701 !important;
-    border-color: white !important;
-    color: white !important
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited {
+  background-color: #ff6701 !important;
+  border-color: white !important;
+  color: white !important;
 }
 
 .btn-outline-primary {
-    color: #FF6701 !important;
-    /* background-color: #7cc !important; */
-    border-color: #FF6701 !important;
-    border-radius: 20px !important;
+  color: #ff6701 !important;
+  /* background-color: #7cc !important; */
+  border-color: #ff6701 !important;
+  border-radius: 20px !important;
 }
 
 .btn {
-    margin: 50px;
-    padding: 20px !important;
+  margin: 50px;
+  padding: 20px !important;
 }
 
 .header {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 /* border-collapse: separate;  */
 
 .icon {
-    height: 18%;
-    width: 18%;
-    position: absolute; 
-    top: -30px; 
-    left: 100px; 
-    background-color: #FFC288;
-    background-size:cover;
-    background-size: 100;
+  height: 18%;
+  width: 18%;
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  background-color: #ffc288;
+  background-size: cover;
+  background-size: 100;
 }
 
 .img-fluid {
-    /* max-width: 100%; */
-    padding: 0px 0px;
+  /* max-width: 100%; */
+  padding: 0px 0px;
 }
 .textarea {
-    resize: none;
-    /* min-height: 20px; */
- }
+  resize: none;
+  /* min-height: 20px; */
+}
 
 h2 {
-    position: absolute; 
-    top: 100px; 
-    left: 270px;
-    font: bold 10px !important; 
-    background-color:black;
-    /* background-size: 10px !important; */
-    background: #FFC288;
-    padding-right: 15px;
-    padding-left: 20px;
-    /* width: 100%;  */
- }
+  position: absolute;
+  top: 100px;
+  left: 270px;
+  font: bold 10px !important;
+  background-color: black;
+  /* background-size: 10px !important; */
+  background: #ffc288;
+  padding-right: 15px;
+  padding-left: 20px;
+  /* width: 100%;  */
+}
 
- /* .icon {
+/* .icon {
     position: absolute; 
     top: 300px; 
     left: 50px; 
     width: 100%; 
  } */
- 
+
 /* h1 span { 
     font: bold 100px !important; 
     letter-spacing: 1px;  
@@ -104,7 +107,7 @@ h2 {
     background: rgba(0, 0, 0, 0.4);
     padding: 10px; 
  } */
- 
+
 .containerStyle {
   padding: 0;
 }
@@ -127,22 +130,28 @@ h2 {
   margin: 0;
   width: 25%;
   text-align: center;
-  font-size: 1.65em;
+  font-size: 2em;
   font-weight: bold;
   font-family: "Squada One";
 }
+
 .brandStyle span {
+  font-size: 0.8em;
   color: white;
   letter-spacing: 7px;
 }
 
 .navElementStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 70%;
   /* border: solid 1px black; */
 }
 
 .navElementStyle span {
+  font-size: 0.9em;
   font-family: "Roboto";
   font-weight: bold;
   color: white;
@@ -158,19 +167,29 @@ h2 {
 }
 
 .emphasizedNav {
+  /* border: none; */
+  border: 0;
+  padding: 0.5em !important;
   text-align: center;
   width: 70%;
   background-color: white;
   border-radius: 3em;
   font-weight: bold;
+  margin: 0px;
+  display: inline-block;
+  color: #ff6701;
 }
 
-.emphasizedNav {
+.emphasizedNav:focus {
+  background-color: white !important;
+  color: #ff6701 !important;
   border: none;
-  margin: 0;
-  display: inline-block;
-  padding: 0;
-  color: #ff6701;
+}
+
+.emphasizedNav:not(:focus) {
+  background-color: white !important;
+  color: #ff6701 !important;
+  border: none;
 }
 
 .emphasizedNav:hover {
@@ -178,6 +197,7 @@ h2 {
   width: 70%;
   background-color: #ff6701;
   border: 3px solid white;
-  border-radius: 3em;
+  padding: 0.35em !important;
+  /* border-radius: 3em; */
   color: white;
 }
