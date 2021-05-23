@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
-import commpan from "../res/commpan.jpg";
+import commpan from "../assets/commpan.jpg";
 
 const About = () => {
   return (
