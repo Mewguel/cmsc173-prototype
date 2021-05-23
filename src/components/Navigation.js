@@ -22,7 +22,9 @@ const Navigation = (props) => {
               <span>MAP</span>
             </Nav.Link>
           </LinkContainer>
-          <Button className="emphasizedNav">REGISTER</Button>
+          <LinkContainer to="/register">
+            <Button className="emphasizedNav">REGISTER</Button>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
