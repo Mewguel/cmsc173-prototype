@@ -61,7 +61,7 @@ const Register = (props) => {
                 </fieldset>
                 <Form.Row className="button-form-row">
                   <LinkContainer to="/donation">
-                    <Button className="next-page-button">Next page >></Button>
+                    <Button className="next-page-button">Next page &#62;&#62;</Button>
                   </LinkContainer>
                 </Form.Row>
               </Form>
