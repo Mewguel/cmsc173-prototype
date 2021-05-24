@@ -5,97 +5,59 @@
 }
 
 .registration {
-    background-image: url(assets/register-bgimage.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(assets/register-bgimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body, html {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .reg-form {
-    background-color: #FFC288;
-    padding: 30px;
+  background-color: #FFC288;
+  padding: 30px 30px 40px;
 }
 
 .regform-content {
-    border: 5px solid white;
-    border-radius: 50px;
-    margin: 0px 20px;
-    padding: 0px 50px;
-}
-
-.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
-    background-color: #FF6701 !important;
-    border-color: white !important;
-    color: white !important
-}
-
-.btn-outline-primary {
-    color: #FF6701 !important;
-    /* background-color: #7cc !important; */
-    border-color: #FF6701 !important;
-    border-radius: 20px !important;
-}
-
-.btn {
-    margin: 50px;
-    padding: 20px !important;
+  border: 5px solid white;
+  border-radius: 50px;
+  margin: 0px 20px;
+  padding: 0px 50px 30px;
 }
 
 .header {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
-/* border-collapse: separate;  */
 
 .icon {
-    height: 18%;
-    width: 18%;
-    position: absolute; 
-    top: -30px; 
-    left: 100px; 
-    background-color: #FFC288;
-    background-size:cover;
-    background-size: 100;
+  height: 18%;
+  width: 18%;
+  background-color: #FFC288;
+  background-size:cover;
+  background-size: 100;
+  display: inline-block;
 }
 
 .img-fluid {
-    /* max-width: 100%; */
-    padding: 0px 0px;
+  /* max-width: 100%; */
+  padding: 0px 0px;
 }
 .textarea {
-    resize: none;
+  resize: none;
     /* min-height: 20px; */
  }
 
 .register-heading {
-    position: absolute; 
-    top: 100px; 
-    left: 270px;
-    font: bold 10px !important; 
-    background-color:black;
-    background: #FFC288;
-    padding-right: 15px;
-    padding-left: 20px;
+  display: inline-block;
+  font: bold 10px !important; 
+  background-color:black;
+  background: #FFC288;
+  padding-right: 15px;
+  padding-left: 20px;
 }
-
- /* .icon {
-    position: absolute; 
-    top: 300px; 
-    left: 50px; 
-    width: 100%; 
- } */
- 
-/* h1 span { 
-    font: bold 100px !important; 
-    letter-spacing: 1px;  
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.4);
-    padding: 10px; 
- } */
  
 .containerStyle {
   padding: 0;
@@ -184,7 +146,9 @@ body, html {
 }
 
 .button-form-row {
-  margin-bottom: 10px;
+  margin: 30px 0px 10px;
+  padding: 20px !important;
+  /* margin-bottom: 10px; */
   justify-content: flex-end;
   width: 100%;
 }
@@ -196,4 +160,9 @@ body, html {
   border: none;
   font-weight: bold;
   padding: 0 10px;
+  font-size: 25px;
+}
+
+.next-page-button:hover, .next-page-button:visited, .next-page-button:active {
+  background-color: #FFC288 !important;
 }
