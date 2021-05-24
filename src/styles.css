@@ -258,6 +258,14 @@ html {
   border: none;
   font-size: 25px;
   border-radius: 2em;
+  font-weight: bold;
+}
+
+.register-button-donation:hover,
+.register-button-donation:visited,
+.register-button-donation:active {
+  background-color: #FFC288 !important;
+  color: #ff6701;
 }
 
 .next-page-button {
