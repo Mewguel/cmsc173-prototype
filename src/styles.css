@@ -11,7 +11,8 @@
   background-size: cover;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -45,7 +46,6 @@ body, html {
 }
 .textarea {
   resize: none;
-    /* min-height: 20px; */
  }
 
 .register-heading {
@@ -55,7 +55,7 @@ body, html {
   font-size: 30px;
   padding-left: 20px;
 }
- 
+
 .containerStyle {
   padding: 0;
 }
@@ -78,22 +78,28 @@ body, html {
   margin: 0;
   width: 25%;
   text-align: center;
-  font-size: 1.65em;
+  font-size: 1.3em;
   font-weight: bold;
   font-family: "Squada One";
 }
+
 .brandStyle span {
+  font-size: 1em;
   color: white;
   letter-spacing: 7px;
 }
 
 .navElementStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 70%;
   /* border: solid 1px black; */
 }
 
 .navElementStyle span {
+  font-size: 0.7em;
   font-family: "Roboto";
   font-weight: bold;
   color: white;
@@ -109,28 +115,99 @@ body, html {
 }
 
 .emphasizedNav {
+  font-size: 0.75em;
+  border: none;
+  padding: 0.5em !important;
   text-align: center;
   width: 70%;
   background-color: white;
   border-radius: 3em;
   font-weight: bold;
+  margin: 0px;
+  display: inline-block;
+  color: #ff6701;
 }
 
-.emphasizedNav {
+.emphasizedNav:focus {
+  background-color: white !important;
+  color: #ff6701 !important;
   border: none;
-  margin: 0;
-  display: inline-block;
-  padding: 0;
-  color: #ff6701;
+}
+
+.emphasizedNav:not(:focus) {
+  background-color: white !important;
+  color: #ff6701 !important;
+  border: none;
 }
 
 .emphasizedNav:hover {
   text-align: center;
   width: 70%;
-  background-color: #ff6701;
-  border: 3px solid white;
-  border-radius: 3em;
-  color: white;
+  background-color: #ff6701 !important;
+  border: 3px solid white !important;
+  padding: 0.3em !important;
+  /* border-radius: 3em; */
+  color: white !important;
+  transition: 150ms;
+}
+
+.aboutSectionTall {
+  display: flex;
+  flex-direction: column;
+  height: 18em;
+  background-color: #fcecdd;
+  /* border: solid black 1px; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutSectionSmall {
+  display: flex;
+  flex-direction: column;
+  height: 9em;
+  background-color: #ffc288;
+  /* border: solid black 1px; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.colNoPad {
+  padding: 0;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.aboutHead {
+  font-size: 2.9em;
+  font-family: "Squada One";
+  color: #ff6701;
+}
+
+.aboutSub {
+  font-size: 1.2em;
+  font-family: "Roboto";
+}
+
+.fullImageInParent {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutSemiHead {
+  font-size: 1.4em;
+  font-family: "Roboto";
+  color: #a64300;
+}
+
+.aboutFooter {
+  background-color: #ffc288;
+}
+
+.aboutFooter h2 {
+  font-size: 1.4em;
+  color: black;
 }
 
 .label-size-restrict {
@@ -160,7 +237,9 @@ body, html {
   font-size: 25px;
 }
 
-.next-page-button:hover, .next-page-button:visited, .next-page-button:active {
+.next-page-button:hover,
+.next-page-button:visited,
+.next-page-button:active {
   background-color: #FFC288 !important;
 }
 
