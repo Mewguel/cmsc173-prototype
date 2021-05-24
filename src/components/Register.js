@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Form, Image, Container, Row, Button } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
 import registerIcon from '../assets/register-icon.png';
 
 const Register = (props) => {
@@ -59,8 +60,10 @@ const Register = (props) => {
                   </Form.Group>
                 </fieldset>
                 <Form.Row className="button-form-row">
+                  <LinkContainer to="/donation">
                     <Button className="next-page-button">Next page >></Button>
-                  </Form.Row>
+                  </LinkContainer>
+                </Form.Row>
               </Form>
             </Col>
           </Row>

@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import Register from './components/Register';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Donation from './components/Donation';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route path="/map" component={App}/>
         <Route path="/register" component={Register}/>
         <Route path="/about" component={About}/>
+        <Route path="/donation" component={Donation}/>
       </Switch>
     </Router>
   </React.StrictMode>,
