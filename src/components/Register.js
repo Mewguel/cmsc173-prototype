@@ -6,10 +6,10 @@ const Register = (props) => {
     return (
         <Container fluid className="registration">
           <Row className="justify-content-center align-items-center">
-            <Col sm={12} md={8} xl={6} className="reg-form">
+            <Col sm={12} lg={8} xl={6} className="reg-form">
               <Form>
                 <fieldset className="regform-content">
-                  <legend>
+                  <legend className="form-legend">
                     <Image src={registerIcon} className="icon img-fluid" alt="icon" />
                     <h2 className="register-heading">Register Your Pantry</h2>
                   </legend>

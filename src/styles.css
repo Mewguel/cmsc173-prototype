@@ -36,8 +36,6 @@ body, html {
   height: 18%;
   width: 18%;
   background-color: #FFC288;
-  background-size:cover;
-  background-size: 100;
   display: inline-block;
 }
 
@@ -52,10 +50,9 @@ body, html {
 
 .register-heading {
   display: inline-block;
-  font: bold 10px !important; 
-  background-color:black;
-  background: #FFC288;
-  padding-right: 15px;
+  font-family: 'Roboto';
+  background-color: #FFC288;
+  font-size: 30px;
   padding-left: 20px;
 }
  
@@ -165,4 +162,38 @@ body, html {
 
 .next-page-button:hover, .next-page-button:visited, .next-page-button:active {
   background-color: #FFC288 !important;
+}
+
+.form-legend {
+  width: 450px !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .register-heading {
+    font-size: 25px;
+  }
+
+  .form-legend {
+    width: 400px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .register-heading {
+    font-size: 20px;
+  }
+
+  .form-legend {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .icon {
+    display: none;
+  }
+
+  .form-legend {
+    width: 250px !important;
+  }
 }
