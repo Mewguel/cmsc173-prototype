@@ -1,23 +1,22 @@
 import React from 'react'
 import pantrySample from "../assets/pantry sample.png"
 
-export default function PantryInfo() {
+export default function PantryInfo(props) {
     return (
         <div style={container}>
-            <div style={boxOne}>
-                <h3>Barangay Batong  </h3>
-                <h3>Malake Community </h3>
-                <h3>Pantry</h3>
-                <p style={pLessMargin}> Barangay Batong Malake, Los Baños, Laguna</p>
+            <div >
+                <h3>{props.name}</h3>
+
+                <p style={pLessMargin}> {props.address}</p>
             </div>
-            <div style={boxTwo}>
+            <div >
                 <img src={pantrySample} style={{height:"250px", width:"400px"}} alt="pantry sample"/>
             </div>
-            <div style={boxThree}>
-                <p style={pLessMargin}>Contact #: 0999 143 1432 </p>
-                <p style={pLessMargin}>GCash #: 0999 143 1432 </p>
-                <p style={pLessMargin}>GCash Name: Rodolfo Cresanto </p>
-                <p style={pLessMargin}>Facebook: https://tinyurl.com/app </p>
+            <div >
+                <p style={pLessMargin}>Contact #: {props.contactNo} </p>
+                <p style={pLessMargin}>GCash #: {props.gCash} </p>
+                <p style={pLessMargin}>GCash Name: {props.gCashName} </p>
+                <p style={pLessMargin}>Facebook: {props.faceBook} </p>
             </div>
             
         </div>
