@@ -1,11 +1,15 @@
-import {GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
-import {Component} from "react";
+import {
+    GoogleMap,
+    withScriptjs,
+    withGoogleMap,
+    Marker,
+} from "react-google-maps";
+import { API_key } from "../default.json";
 import mapStyles from "./Mapstyles";
 import PantryInfo from './PantryInfo'
-import { Container, Row, Col} from "react-bootstrap";
-
-
-class Map extends Component{
+import { Container} from "react-bootstrap";
+import {Component} from "react";
+class MapApi extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -69,27 +73,37 @@ class Map extends Component{
 
                         </GoogleMap>    
 
-                
-
-                                
-           
                         <PantryInfo name={this.state.currentPantry.name}  name={this.state.currentPantry.name} address={this.state.currentPantry.address} 
                         contactNo={this.state.currentPantry.contactNo}  gCash={this.state.currentPantry.gCash} gCashName={this.state.currentPantry.gCashName}
                         faceBook={this.state.currentPantry.faceBook}/>
 
-
             </Container>
-  
-
-       
-
-
 
         );      
     }
 }
+const WrappedMap = withScriptjs(withGoogleMap(MapApi));
 
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-export default WrappedMap;
+function Map() {
+    return (
+        <div style={{ width: "100vw", height: "100vh" }}>
+            <WrappedMap
+                isMarkerShown={true}
+                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${API_key}`}
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={
+                    <div
+                        style={{
+                            height: `90%`,
+                            width: `75% `,
+                            margin: `5px`,
+                        }}
+                    />
+                }
+                mapElement={<div style={{ height: `100%` }} />}
+            />
+        </div>
+    );
+}
+export default Map;
 
