@@ -1,13 +1,12 @@
-import {
-    GoogleMap,
-    withScriptjs,
-    withGoogleMap,
-    Marker,
-} from "react-google-maps";
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import { API_key } from "../default.json";
 import mapStyles from "./Mapstyles";
 import PantryInfo from "./PantryInfo";
+<<<<<<< HEAD
 import { Container } from "react-bootstrap";
+=======
+import { Container, Row, Col } from "react-bootstrap";
+>>>>>>> 0c1de9fc53149b0d996aa433a294e7a2770c507f
 import { Component } from "react";
 class MapApi extends Component {
     constructor(props) {
@@ -142,7 +141,7 @@ const WrappedMap = withScriptjs(withGoogleMap(MapApi));
 
 function Map() {
     return (
-        <div style={{ width: "100vw", height: "100vh" }}>
+        <div style={{ width: "80vw", height: "90vh" }}>
             <WrappedMap
                 isMarkerShown={true}
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${API_key}`}

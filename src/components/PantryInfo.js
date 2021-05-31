@@ -9,10 +9,10 @@ export default function PantryInfo(props) {
 
                 <p style={pLessMargin}> {props.address}</p>
             </div>
-            <div >
+            <div style={imageContainer}>
                 <img src={pantrySample} style={{height:"250px", width:"400px"}} alt="pantry sample"/>
             </div>
-            <div >
+            <div style={textContainer}>
                 <p style={pLessMargin}>Contact #: {props.contactNo} </p>
                 <p style={pLessMargin}>GCash #: {props.gCash} </p>
                 <p style={pLessMargin}>GCash Name: {props.gCashName} </p>
@@ -34,23 +34,20 @@ const container = {
     padding: "0"
 }
 
-const boxOne = {
-    fontFamily: "Roboto",
-    fontWeight: "600",
-    flex:"1"
+const imageContainer = {
+    backgroundSize: "cover",
+    paddingTop: "62.5%",
+    position:"relative",
+    top: "-250px",
+    width: "100%"
+
 }
 
-const boxTwo = {
-    flex:"1"
+const textContainer = {
+    position:"relative",
+    top: "-250px"
 }
 
-const boxThree = {
-    fontFamily: "Roboto",
-    fontWeight: "400",
-    flex:"1",
-    margin: "0",
-    padding: "0"
-}
 
 const pLessMargin = {
     margin: "0",
