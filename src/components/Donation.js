@@ -62,11 +62,9 @@ const Donation = (props) => {
                       <Modal.Header closeButton>
                         <Modal.Title>Successfully registered!</Modal.Title>
                       </Modal.Header>
-                      <Modal.Body>Go to Maps?</Modal.Body>
                       <Modal.Footer>
-                        <Button variant="secondary" onClick={hidePrompt}>Close</Button>
                         <LinkContainer to="/">
-                          <Button variant="primary" onClick={hidePrompt}>Okay</Button>
+                          <Button variant="primary" onClick={hidePrompt}>Go to Maps</Button>
                         </LinkContainer>
                       </Modal.Footer>
                     </Modal>
