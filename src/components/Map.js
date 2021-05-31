@@ -7,7 +7,7 @@ import {
 import { API_key } from "../default.json";
 import mapStyles from "./Mapstyles";
 import PantryInfo from "./PantryInfo";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Component } from "react";
 class MapApi extends Component {
     constructor(props) {
@@ -128,7 +128,6 @@ class MapApi extends Component {
 
                 <PantryInfo
                     className="pantryInfo"
-                    name={this.state.currentPantry.name}
                     name={this.state.currentPantry.name}
                     address={this.state.currentPantry.address}
                     contactNo={this.state.currentPantry.contactNo}

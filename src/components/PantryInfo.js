@@ -21,7 +21,7 @@ export default function PantryInfo(props) {
                 <p className="pLessMargin">GCash #: {props.gCash} </p>
                 <p className="pLessMargin">GCash Name: {props.gCashName} </p>
                 <p className="pLessMargin">
-                    Facebook: <br/><a href="#" style={{fontSize:"1.5vw"}}> {props.faceBook}</a>{" "}
+                    Facebook: <br/><a href="#name" style={{fontSize:"1.5vw"}}> {props.faceBook}</a>{" "}
                 </p>
             </div>
         </div>
