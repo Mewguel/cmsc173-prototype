@@ -4,109 +4,61 @@
     background-color: #ff6701;
 }
 
-* {
-    font-size: 20px;
-}
-
 .registration {
-    background-image: url(assets/register-bgimage.jpg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* position: absolute;  */
+  background-image: url(assets/register-bgimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body,
 html {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .reg-form {
-    background-color: #ffc288;
-    padding: 30px;
+  background-color: #FFC288;
+  padding: 30px 30px 40px;
 }
 
 .regform-content {
-    border: 5px solid white;
-    border-radius: 50px;
-    margin: 0px 50px;
-    padding: 0px 80px;
+  border: 5px solid white;
+  border-radius: 50px;
+  margin: 0px 20px;
+  padding: 0px 50px 30px;
 }
 
-.btn-outline-primary:hover,
-.btn-outline-primary:active,
-.btn-outline-primary:visited {
-    background-color: #ff6701 !important;
-    border-color: white !important;
-    color: white !important;
-}
-
-.btn-outline-primary {
-    color: #ff6701 !important;
-    /* background-color: #7cc !important; */
-    border-color: #ff6701 !important;
-    border-radius: 20px !important;
-}
-
-.btn {
-    margin: 50px;
-    padding: 20px !important;
+.donation-input-questions {
+  margin: 40px 0;
 }
 
 .header {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
-/* border-collapse: separate;  */
 
 .icon {
-    height: 18%;
-    width: 18%;
-    position: absolute;
-    top: -30px;
-    left: 100px;
-    background-color: #ffc288;
-    background-size: cover;
-    background-size: 100;
+  height: 18%;
+  width: 18%;
+  background-color: #FFC288;
+  display: inline-block;
 }
 
 .img-fluid {
-    /* max-width: 100%; */
-    padding: 0px 0px;
+  /* max-width: 100%; */
+  padding: 0px 0px;
 }
 .textarea {
-    resize: none;
-    /* min-height: 20px; */
+  resize: none;
+ }
+
+.register-heading {
+  display: inline-block;
+  font-family: 'Roboto';
+  background-color: #FFC288;
+  font-size: 30px;
+  padding-left: 20px;
 }
-
-h2 {
-    position: absolute;
-    top: 100px;
-    left: 270px;
-    font: bold 10px !important;
-    background-color: black;
-    /* background-size: 10px !important; */
-    background: #ffc288;
-    padding-right: 15px;
-    padding-left: 20px;
-    /* width: 100%;  */
-}
-
-/* .icon {
-    position: absolute; 
-    top: 300px; 
-    left: 50px; 
-    width: 100%; 
- } */
-
-/* h1 span { 
-    font: bold 100px !important; 
-    letter-spacing: 1px;  
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.4);
-    padding: 10px; 
- } */
 
 .containerStyle {
     padding: 0;
@@ -126,30 +78,36 @@ h2 {
 }
 
 .brandStyle {
-    color: white;
-    padding: 0;
-    margin: 0;
-    width: 25%;
-    text-align: center;
-    font-size: 1.65em;
-    font-weight: bold;
-    font-family: "Squada One";
+  color: white;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Squada One";
 }
+
 .brandStyle span {
-    color: white;
-    letter-spacing: 7px;
+  font-size: 1em;
+  color: white;
+  letter-spacing: 7px;
 }
 
 .navElementStyle {
-    text-align: center;
-    width: 70%;
-    /* border: solid 1px black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  /* border: solid 1px black; */
 }
 
 .navElementStyle span {
-    font-family: "Roboto";
-    font-weight: bold;
-    color: white;
+  font-size: 0.7em;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: white;
 }
 
 .navElementStyle:hover {
@@ -162,65 +120,229 @@ h2 {
 }
 
 .emphasizedNav {
-    text-align: center;
-    width: 70%;
-    background-color: white;
-    border-radius: 3em;
-    font-weight: bold;
+  font-size: 0.75em;
+  border: none;
+  padding: 0.5em !important;
+  text-align: center;
+  width: 70%;
+  background-color: white;
+  border-radius: 3em;
+  font-weight: bold;
+  margin: 0px;
+  display: inline-block;
+  color: #ff6701;
 }
 
-.emphasizedNav {
-    border: none;
-    margin: 0;
-    display: inline-block;
-    padding: 0;
-    color: #ff6701;
+.emphasizedNav:focus {
+  background-color: white !important;
+  color: #ff6701 !important;
+  border: none;
+}
+
+.emphasizedNav:not(:focus) {
+  background-color: white !important;
+  color: #ff6701 !important;
+  border: none;
 }
 
 .emphasizedNav:hover {
-    text-align: center;
-    width: 70%;
-    background-color: #ff6701;
-    border: 3px solid white;
-    border-radius: 3em;
-    color: white;
+  text-align: center;
+  width: 70%;
+  background-color: #ff6701 !important;
+  border: 3px solid white !important;
+  padding: 0.3em !important;
+  /* border-radius: 3em; */
+  color: white !important;
+  transition: 150ms;
 }
 
-.map {
-    width: 100%;
+.aboutSectionTall {
+  display: flex;
+  flex-direction: column;
+  height: 25em;
+  background-color: #fcecdd;
+  /* border: solid black 1px; */
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.mapApi {
-    flex: 8;
-    align-items: center;
-    position: sticky;
-    width: 100%;
-    height: auto;
+.aboutSectionSmall {
+  display: flex;
+  flex-direction: column;
+  height: 14em;
+  background-color: #ffc288;
+  /* border: solid black 1px; */
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.pantryInfo {
-    flex: 4;
-    width: 100%;
-    height: auto;
-    position: sticky;
+.colNoPad {
+  padding: 0;
 }
 
-.pLessMargin {
+.textAlignCenter {
+  text-align: center;
+}
+
+.aboutHead {
+  font-size: 2.9em;
+  font-family: "Squada One";
+  color: #ff6701;
+}
+
+.aboutSub {
+  font-size: 1.2em;
+  font-family: "Roboto";
+}
+
+.fullImageInParent {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutSemiHead {
+  font-size: 1.4em;
+  font-family: "Roboto";
+  color: #a64300;
+}
+
+.aboutFooter {
+  background-color: #ffc288;
+}
+
+.aboutFooter h2 {
+  font-size: 1.4em;
+  color: black;
+}
+
+.label-size-restrict {
+  min-width: 180px;
+}
+
+.additional-text {
+  padding: 0 8px;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.button-form-row {
+  margin: 30px 0px 10px;
+  padding: 20px !important;
+  /* margin-bottom: 10px; */
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#button-previous {
+  justify-content: flex-start;
+  display: flex;
+}
+
+#button-register {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.donation-option-row {
+  padding: 30px 20px 15px;
+}
+
+.select-donation-option {
+  width: 150px !important;
+  color: #ff6701;
+  font-weight: bold;
+}
+
+.register-button-donation {
+  background-color: #ff6701;
+  padding: 10px 20px !important;
+  border: none;
+  font-size: 25px;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+.register-button-donation:hover,
+.register-button-donation:visited,
+.register-button-donation:active {
+  background-color: #FFC288 !important;
+  color: #ff6701;
+}
+
+.next-page-button {
+  margin: 0;
+  background-color: #FFC288;
+  color: #ff6701;
+  border: none;
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+.next-page-button:hover,
+.next-page-button:visited,
+.next-page-button:active {
+  background-color: #FFC288 !important;
+}
+
+.form-legend {
+  width: 450px !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .register-heading {
+    font-size: 25px;
+  }
+
+  .form-legend {
+    width: 400px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .donation-input-questions {
     margin: 0;
-    padding: 0;
-    font-size: 1.5vw;
+  }
 }
 
-.pantryName {
-    font-size: 3vw;
-    position: sticky;
+@media (max-width: 650px) {
+  .register-heading {
+    font-size: 20px;
+  }
+
+  .form-legend {
+    width: 350px !important;
+  }
+
+  #previous-button-donation {
+    display: none;
+  }
 }
 
-.pantryImageContainer {
-    padding: 0;
-    margin: 10px 0;
-    background-size: cover;
-    position: "sticky";
-    top: -250px;
-    width: 100%;
+@media (max-width: 520px) {
+  .icon {
+    display: none;
+  }
+
+  .form-legend {
+    width: 200px !important;
+  }
+
+  .register-heading {
+    font-size: 18px;
+  }
+
+  .regform-content {
+    padding: 0 20px 30px;
+    margin: 0;
+  }
+
+  .select-donation-option {
+    width: 130px !important;
+    font-size: 14px;
+  }
+
+  .donation-option-row {
+    padding: 5px 15px 0;
+  }
 }

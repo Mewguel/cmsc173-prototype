@@ -1,93 +1,73 @@
 import React from 'react';
-import { Col, Row, Form } from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap';
+import { Col, Form, Image, Container, Row, Button } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
+import registerIcon from '../assets/register-icon.png';
 
-const handleClick = () => {
-    alert('hello')
-  }
-
-const Register = () => {
+const Register = (props) => {
     return (
-        <div className="registration d-flex justify-content-center align-items-center">
-          <div className="reg-form col-md-8 ">
-                <div className="header">
-                {/* <img src={require('/images/image-name.png')} /> */}
-                     <img src={require("../assets/register-icon.png").default} className="icon img-fluid" alt="icon" />
-                    <h2>Register Your Pantry</h2>
-                    {/* <hr class="my-4"></hr> */}
-                </div>
-            <div className="regform-content pt-5">
-              <Form.Group>
-                    <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <Form.Row>
-                  <Form.Label column lg={3}>
-                    Name of the Community Pantry
-                  </Form.Label>
-                  <Col>
-                    <Form.Control type="text" />
-                  </Col>
+        <Container fluid className="registration">
+          <Row className="justify-content-center align-items-center">
+            <Col sm={12} lg={8} xl={6} className="reg-form">
+              <Form>
+                <fieldset className="regform-content">
+                  <legend className="form-legend">
+                    <Image src={registerIcon} className="icon img-fluid" alt="icon" />
+                    <h2 className="register-heading">Register Your Pantry</h2>
+                  </legend>
+                  <Form.Group  as={Row}>
+                      <Form.Label column lg={4} className="label-size-restrict">Name of the Community Pantry</Form.Label>
+                      <Col>
+                        <Form.Control type="text" />
+                      </Col>
+                  </Form.Group>
+                  <Form.Group as={Row}>
+                      <Form.Label column lg={4} className="label-size-restrict">Contact Person</Form.Label>
+                      <Col>
+                        <Form.Control type="text" />
+                      </Col>
+                  </Form.Group>
+                  <Form.Group as={Row}>
+                      <Form.Label column lg={4} className="label-size-restrict">Contact Number</Form.Label>
+                      <Col>
+                        <Form.Control type="text" />
+                      </Col>
+                  </Form.Group>
+                  <Form.Group as={Row}>
+                      <Form.Label column lg={4} className="label-size-restrict">E-mail Address</Form.Label>
+                      <Col>
+                        <Form.Control type="email" />
+                      </Col>
+                  </Form.Group>
+                  <Form.Group as={Row}>
+                      <Form.Label column lg={4} className="label-size-restrict">
+                        Location
+                      </Form.Label>
+                      <Col>
+                        <Form.Control type="text" />
+                        <Form.Row className="additional-text">
+                          <Form.Text>Include as much details as possible</Form.Text>
+                        </Form.Row>
+                      </Col>
+                  </Form.Group>
+                  <Form.Group as={Row}>
+                      <Form.Label column lg={4} className="label-size-restrict">Other Information</Form.Label>
+                      <Col>
+                        <Form.Control as="textarea" className="textarea" />
+                        <Form.Row className="additional-text">
+                          <Form.Text>You may include other relevant information such as links to your public posts about the pantry for updates, available goods, time and days open, etc.</Form.Text>
+                        </Form.Row>
+                      </Col>
+                  </Form.Group>
+                </fieldset>
+                <Form.Row className="button-form-row">
+                  <LinkContainer to="/donation">
+                    <Button className="next-page-button">Next page &#62;&#62;</Button>
+                  </LinkContainer>
                 </Form.Row>
-                <br />
-                <Form.Row>
-                  <Form.Label column lg={3}>
-                    Contact Person
-                  </Form.Label>
-                  <Col>
-                    <Form.Control type="text"/>
-                  </Col>
-                </Form.Row>
-                <br />
-                <Form.Row>
-                  <Form.Label column lg={3}>
-                    Contact Number
-                  </Form.Label>
-                  <Col>
-                    <Form.Control type="text"/>
-                  </Col>
-                </Form.Row>
-                <br />
-                <Form.Row>
-                  <Form.Label column lg={3}>
-                    E-mail Address
-                  </Form.Label>
-                  <Col>
-                    <Form.Control type="text"/>
-                  </Col>
-                </Form.Row>
-                <br />
-                <Form.Row>
-                  <Form.Label column lg={3}>
-                    Location
-                  </Form.Label>
-                  <Col>
-                    <Form.Control as="textarea" className="textarea"/>
-                  </Col>
-                </Form.Row>
-                <br />
-                <Form.Row>
-                  <Form.Label column lg={3}>
-                    Other Information
-                  </Form.Label>
-                  <Col>
-                    <Form.Control as="textarea" className="textarea"/>
-                  </Col>
-                </Form.Row>
-                <Form.Row class="form-text col-lg-9 offset-3">
-                  <small>
-                    You may include other relevant information such as links to your public posts about the pantry for updates, available goods, time and days open, etc.
-                  </small>
-                </Form.Row>
-                <br /><br />
-              </Form.Group>
-            </div>
-              {/* <Button className="register-btn col-md-3 offset-md-8">REGISTER</Button> */}
-              <button 
-                type="button" 
-                class="btn btn-outline-primary col-md-3 offset-md-8"
-                onclick={handleClick}
-                >REGISTER</button>
-          </div>
-        </div>
+              </Form>
+            </Col>
+          </Row>
+        </Container>
     );
 }
 
