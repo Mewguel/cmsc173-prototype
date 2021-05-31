@@ -96,8 +96,9 @@ class MapApi extends Component {
     }
     render() {
         return (
-            <Container fluid>
+            <Container fluid className="map">
                 <GoogleMap
+                    className="mapApi"
                     defaultOptions={{ styles: mapStyles }}
                     zoom={18}
                     center={{
@@ -126,6 +127,7 @@ class MapApi extends Component {
                 </GoogleMap>
 
                 <PantryInfo
+                    className="pantryInfo"
                     name={this.state.currentPantry.name}
                     name={this.state.currentPantry.name}
                     address={this.state.currentPantry.address}

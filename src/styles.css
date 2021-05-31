@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap");
 
 .navbarStyle {
-  background-color: #ff6701;
+    background-color: #ff6701;
 }
 
 * {
@@ -10,20 +10,21 @@
 
 .registration {
     background-image: url(assets/register-bgimage.jpg);
-    height: 100%; 
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* position: absolute;  */
 }
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
 }
 
 .reg-form {
-    background-color: #FFC288;
+    background-color: #ffc288;
     padding: 30px;
 }
 
@@ -34,16 +35,18 @@ body, html {
     padding: 0px 80px;
 }
 
-.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
-    background-color: #FF6701 !important;
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited {
+    background-color: #ff6701 !important;
     border-color: white !important;
-    color: white !important
+    color: white !important;
 }
 
 .btn-outline-primary {
-    color: #FF6701 !important;
+    color: #ff6701 !important;
     /* background-color: #7cc !important; */
-    border-color: #FF6701 !important;
+    border-color: #ff6701 !important;
     border-radius: 20px !important;
 }
 
@@ -60,11 +63,11 @@ body, html {
 .icon {
     height: 18%;
     width: 18%;
-    position: absolute; 
-    top: -30px; 
-    left: 100px; 
-    background-color: #FFC288;
-    background-size:cover;
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    background-color: #ffc288;
+    background-size: cover;
     background-size: 100;
 }
 
@@ -75,28 +78,28 @@ body, html {
 .textarea {
     resize: none;
     /* min-height: 20px; */
- }
+}
 
 h2 {
-    position: absolute; 
-    top: 100px; 
+    position: absolute;
+    top: 100px;
     left: 270px;
-    font: bold 10px !important; 
-    background-color:black;
+    font: bold 10px !important;
+    background-color: black;
     /* background-size: 10px !important; */
-    background: #FFC288;
+    background: #ffc288;
     padding-right: 15px;
     padding-left: 20px;
     /* width: 100%;  */
- }
+}
 
- /* .icon {
+/* .icon {
     position: absolute; 
     top: 300px; 
     left: 50px; 
     width: 100%; 
  } */
- 
+
 /* h1 span { 
     font: bold 100px !important; 
     letter-spacing: 1px;  
@@ -104,80 +107,110 @@ h2 {
     background: rgba(0, 0, 0, 0.4);
     padding: 10px; 
  } */
- 
+
 .containerStyle {
-  padding: 0;
+    padding: 0;
 }
 
 .navigationStyle {
-  /* background-color: white; */
-  display: flex;
-  justify-content: space-around;
-  width: 60%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
 }
 
 .navbarCollapseStyle {
-  /* background-color: red; */
-  justify-content: flex-end;
+    /* background-color: red; */
+    justify-content: flex-end;
 }
 
 .brandStyle {
-  color: white;
-  padding: 0;
-  margin: 0;
-  width: 25%;
-  text-align: center;
-  font-size: 1.65em;
-  font-weight: bold;
-  font-family: "Squada One";
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    text-align: center;
+    font-size: 1.65em;
+    font-weight: bold;
+    font-family: "Squada One";
 }
 .brandStyle span {
-  color: white;
-  letter-spacing: 7px;
+    color: white;
+    letter-spacing: 7px;
 }
 
 .navElementStyle {
-  text-align: center;
-  width: 70%;
-  /* border: solid 1px black; */
+    text-align: center;
+    width: 70%;
+    /* border: solid 1px black; */
 }
 
 .navElementStyle span {
-  font-family: "Roboto";
-  font-weight: bold;
-  color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: white;
 }
 
 .navElementStyle:hover {
-  text-align: center;
-  /* width: 100%; */
-  border-top: solid white 3px;
-  padding-bottom: 0px;
-  transition: 150ms;
-  /* border: solid 1px black; */
+    text-align: center;
+    /* width: 100%; */
+    border-top: solid white 3px;
+    padding-bottom: 0px;
+    transition: 150ms;
+    /* border: solid 1px black; */
 }
 
 .emphasizedNav {
-  text-align: center;
-  width: 70%;
-  background-color: white;
-  border-radius: 3em;
-  font-weight: bold;
+    text-align: center;
+    width: 70%;
+    background-color: white;
+    border-radius: 3em;
+    font-weight: bold;
 }
 
 .emphasizedNav {
-  border: none;
-  margin: 0;
-  display: inline-block;
-  padding: 0;
-  color: #ff6701;
+    border: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    color: #ff6701;
 }
 
 .emphasizedNav:hover {
-  text-align: center;
-  width: 70%;
-  background-color: #ff6701;
-  border: 3px solid white;
-  border-radius: 3em;
-  color: white;
+    text-align: center;
+    width: 70%;
+    background-color: #ff6701;
+    border: 3px solid white;
+    border-radius: 3em;
+    color: white;
+}
+
+.map {
+    display: flex;
+    width: 100%;
+}
+
+.mapApi {
+    flex: 8;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: auto;
+}
+
+.pantryInfo {
+    flex: 4;
+    width: 100%;
+    height: auto;
+}
+
+.pLessMargin {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+}
+
+.pantryName {
+    font-size: 3vw;
+    position: sticky;
 }
