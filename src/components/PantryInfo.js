@@ -42,9 +42,7 @@ const container = {
 const imageContainer = {
     padding: "0",
     backgroundSize: "cover",
-    paddingTop: "62.5%",
     position: "sticky",
-    top: "-250px",
     width: "100%",
 };
 
