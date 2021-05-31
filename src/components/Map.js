@@ -144,7 +144,6 @@ const WrappedMap = withScriptjs(withGoogleMap(MapApi));
 
 function Map() {
     return (
-        <div style={{backgroundColor:"#FFC288"}}>
             <div style={{ width: "80vw", height: "90vh" }}>
             <WrappedMap
                 isMarkerShown={true}
@@ -161,9 +160,7 @@ function Map() {
                 }
                 mapElement={<div style={{ height: `100%` }} />}
             />
-        </div>
-        </div>
-        
+            </div>        
     );
 }
 export default Map;

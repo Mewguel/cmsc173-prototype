@@ -110,6 +110,7 @@ h2 {
 
 .containerStyle {
     padding: 0;
+    display: flex;
 }
 
 .navigationStyle {
@@ -186,7 +187,6 @@ h2 {
 }
 
 .map {
-    display: flex;
     width: 100%;
 }
 
@@ -202,6 +202,7 @@ h2 {
     flex: 4;
     width: 100%;
     height: auto;
+    position: sticky;
 }
 
 .pLessMargin {
@@ -213,4 +214,13 @@ h2 {
 .pantryName {
     font-size: 3vw;
     position: sticky;
+}
+
+.pantryImageContainer {
+    padding: 0;
+    margin: 10px 0;
+    background-size: cover;
+    position: "sticky";
+    top: -250px;
+    width: 100%;
 }
