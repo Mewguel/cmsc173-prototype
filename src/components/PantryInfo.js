@@ -9,7 +9,7 @@ export default function PantryInfo(props) {
 
                 <p className="pLessMargin"> {props.address}</p>
             </div>
-            <div style={imageContainer}>
+            <div className="pantryImageContainer">
                 <img
                     src={pantrySample}
                     style={{ height: "40vh", width: "30vw" }}
@@ -37,15 +37,6 @@ const container = {
     right: "50px",
     margin: "0",
     padding: "0",
-};
-
-const imageContainer = {
-    padding: "0",
-    backgroundSize: "cover",
-    paddingTop: "62.5%",
-    position: "sticky",
-    top: "-250px",
-    width: "100%",
 };
 
 const textContainer = {
