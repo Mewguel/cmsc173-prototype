@@ -7,7 +7,7 @@ import Map from "./components/Map";
 function App() {
     return (
         <Container fluid className="containerStyle">
-            <Map></Map>
+            <Map/>
         </Container>
     );
 }
