@@ -1,12 +1,13 @@
-import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
+import {
+    GoogleMap,
+    withScriptjs,
+    withGoogleMap,
+    Marker,
+} from "react-google-maps";
 import { API_key } from "../default.json";
 import mapStyles from "./Mapstyles";
 import PantryInfo from "./PantryInfo";
-<<<<<<< HEAD
-import { Container } from "react-bootstrap";
-=======
 import { Container, Row, Col } from "react-bootstrap";
->>>>>>> 0c1de9fc53149b0d996aa433a294e7a2770c507f
 import { Component } from "react";
 class MapApi extends Component {
     constructor(props) {
