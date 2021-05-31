@@ -12,7 +12,7 @@ export default function PantryInfo(props) {
             <div style={imageContainer}>
                 <img
                     src={pantrySample}
-                    style={{ height: "40vh", width: "30vw" }}
+                    style={{width:"100%"}}
                     alt="pantry sample"
                 />
             </div>
@@ -21,7 +21,7 @@ export default function PantryInfo(props) {
                 <p className="pLessMargin">GCash #: {props.gCash} </p>
                 <p className="pLessMargin">GCash Name: {props.gCashName} </p>
                 <p className="pLessMargin">
-                    Facebook: <a href="#"> {props.faceBook}</a>{" "}
+                    Facebook: <br/><a href="#" style={{fontSize:"1.5vw"}}> {props.faceBook}</a>{" "}
                 </p>
             </div>
         </div>
@@ -34,16 +34,16 @@ const container = {
     justifyContent: "center",
     position: "absolute",
     top: "100px",
-    right: "50px",
+    right: "2vw",
     margin: "0",
     padding: "0",
 };
 
 const imageContainer = {
     padding: "0",
-    backgroundSize: "cover",
     position: "sticky",
-    width: "100%",
+    height: "40vh", 
+    width: "30vw"
 };
 
 const textContainer = {
