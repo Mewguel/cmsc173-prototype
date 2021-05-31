@@ -51,9 +51,3 @@ const imageContainer = {
 const textContainer = {
     position: "relative",
 };
-
-const pLessMargin = {
-    margin: "0",
-    padding: "0",
-    size: "100vw",
-};
