@@ -17,7 +17,7 @@ const Navigation = (props) => {
               <span>ABOUT US</span>
             </Nav.Link>
           </LinkContainer>
-          <LinkContainer to="/map">
+          <LinkContainer to="/">
             <Nav.Link className="navElementStyle">
               <span>MAP</span>
             </Nav.Link>
