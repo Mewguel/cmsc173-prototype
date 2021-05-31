@@ -15,7 +15,6 @@ ReactDOM.render(
       <Navigation />
       <Switch>
         <Route exact path="/" component={App}/>
-        <Route path="/map" component={App}/>
         <Route path="/register" component={Register}/>
         <Route path="/about" component={About}/>
         <Route path="/donation" component={Donation}/>
