@@ -264,9 +264,18 @@ html {
 
 .register-button-donation:hover,
 .register-button-donation:visited,
-.register-button-donation:active {
-  background-color: #FFC288 !important;
-  color: #ff6701;
+.register-button-donation:active,
+.modal-button-navigate-maps:hover,
+.modal-button-navigate-maps:active {
+  background-color: white !important;
+  color: #ff6701 !important;
+}
+
+.modal-button-navigate-maps {
+  background-color: #ff6701 !important;
+  border: none;
+  border-radius: 2em;
+  font-weight: bold;
 }
 
 .next-page-button {

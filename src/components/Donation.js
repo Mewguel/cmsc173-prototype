@@ -64,7 +64,7 @@ const Donation = (props) => {
                       </Modal.Header>
                       <Modal.Footer>
                         <LinkContainer to="/">
-                          <Button variant="primary" onClick={hidePrompt}>Go to Maps</Button>
+                          <Button variant="primary" onClick={hidePrompt} className="modal-button-navigate-maps">Go to Maps</Button>
                         </LinkContainer>
                       </Modal.Footer>
                     </Modal>
