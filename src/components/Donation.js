@@ -1,9 +1,13 @@
-import React from 'react';
-import { Col, Form, Image, Container, Row, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Col, Form, Image, Container, Row, Button, Modal } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import registerIcon from '../assets/register-icon.png';
 
 const Donation = (props) => {
+    const [show, setPrompt] = useState(false);
+    const hidePrompt = () => setPrompt(false);
+    const showPrompt = () => setPrompt(true);
+
     return (
         <Container fluid className="registration">
           <Row className="justify-content-center align-items-center">
@@ -53,7 +57,19 @@ const Donation = (props) => {
                     </LinkContainer>
                   </Col>
                   <Col id="button-register">
-                    <Button className="register-button-donation">Register</Button>
+                    <Button className="register-button-donation" onClick={showPrompt}>Register</Button>
+                    <Modal show={show} onHide={hidePrompt}>
+                      <Modal.Header closeButton>
+                        <Modal.Title>Successfully registered!</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>Go to Maps?</Modal.Body>
+                      <Modal.Footer>
+                        <Button variant="secondary" onClick={hidePrompt}>Close</Button>
+                        <LinkContainer to="/">
+                          <Button variant="primary" onClick={hidePrompt}>Okay</Button>
+                        </LinkContainer>
+                      </Modal.Footer>
+                    </Modal>
                   </Col>
                 </Form.Row>
               </Form>
