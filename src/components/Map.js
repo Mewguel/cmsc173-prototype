@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
     GoogleMap,
     withScriptjs,
@@ -9,6 +10,8 @@ import mapStyles from "./Mapstyles";
 import PantryInfo from "./PantryInfo";
 import { Container } from "react-bootstrap";
 import { Component } from "react";
+import "../styles.css"
+
 class MapApi extends Component {
     constructor(props) {
         super(props);
@@ -91,7 +94,6 @@ class MapApi extends Component {
     }
     changeCurrentPantry(activePantry) {
         //CHANGE CURRENT PANTRY
-
         this.setState({ ...this.state, currentPantry: activePantry });
     }
     render() {
@@ -143,18 +145,17 @@ const WrappedMap = withScriptjs(withGoogleMap(MapApi));
 
 function Map() {
     return (
-            <div style={{ width: "80vw", height: "90vh" }}>
+            <div className="mapPageWrap" style={{ width: "80vw", height: "90vh" }}>
             <WrappedMap
                 isMarkerShown={true}
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${API_key}`}
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={
                     <div
-                        style={{
-                            height: `90%`,
-                            width: `75% `,
-                            margin: `5px`,
-                        }}
+                        className="elementContainer"
+                        // style={{height: `90%`,
+                        // width: `75% `,
+                        // margin: `5px`,}}
                     />
                 }
                 mapElement={<div style={{ height: `100%` }} />}
