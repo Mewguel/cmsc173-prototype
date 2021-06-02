@@ -8,7 +8,7 @@
   background-image: url(assets/register-bgimage.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 body,
@@ -335,7 +335,15 @@ html {
   margin-bottom: 2vh;
 }
 
+@media (min-height: 700px) {
+  .registration {
+    background-size: 110%;
+  }
 
+  .reg-form {
+    padding-bottom: 110px;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   .register-heading {
@@ -512,7 +520,7 @@ html {
 
   .pantryTitle {
     position: absolute;
-    left:50%;
+    left:5%;
     top: 36vh; 
   }
 
@@ -553,7 +561,7 @@ html {
   }
 
   .infoLink {
-    font-size: 3vw;
+    font-size: 1em;
   }
 
   .elementContainer {

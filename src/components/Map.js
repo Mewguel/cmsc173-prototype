@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {
     GoogleMap,
     withScriptjs,
@@ -116,8 +115,6 @@ class MapApi extends Component {
                                 lng: locMarker.lng,
                             }}
                             onClick={() => {
-                                console.log("MEOW");
-
                                 this.changeDefaultCenter(
                                     locMarker.lat,
                                     locMarker.lng
